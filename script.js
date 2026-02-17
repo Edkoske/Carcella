@@ -284,7 +284,7 @@ function openRentalModal(carId) {
             <li>Special rates for long-term rentals</li>
         </ul>
         
-        <a href="https://wa.me/254712345678?text=I%20would%20like%20to%20book%20a%20${car.name.replace(/\s/g, '%20')}" target="_blank" class="btn btn-primary" style="display: inline-block; margin-top: 20px;">
+        <a href="https://wa.me/254710241295?text=I%20would%20like%20to%20book%20a%20${car.name.replace(/\s/g, '%20')}" target="_blank" class="btn btn-primary" style="display: inline-block; margin-top: 20px;" rel="noopener noreferrer">
             <i class="fab fa-whatsapp"></i> Book on WhatsApp
         </a>
     `;
@@ -342,7 +342,7 @@ function openSalesModal(carId) {
             <li>Trade-in accepted</li>
         </ul>
         
-        <a href="https://wa.me/254712345678?text=I%20am%20interested%20in%20the%20${car.name.replace(/\s/g, '%20')}%20listed%20at%20KES%20${car.price.toLocaleString()}" target="_blank" class="btn btn-primary" style="display: inline-block; margin-top: 20px;">
+        <a href="https://wa.me/254710241295?text=I%20am%20interested%20in%20the%20${car.name.replace(/\s/g, '%20')}%20listed%20at%20KES%20${car.price.toLocaleString()}" target="_blank" class="btn btn-primary" style="display: inline-block; margin-top: 20px;" rel="noopener noreferrer">
             <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
         </a>
     `;
