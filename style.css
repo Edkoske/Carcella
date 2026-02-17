@@ -131,6 +131,24 @@ body {
     cursor: pointer;
 }
 
+/* Ensure logo text retains brand color and doesn't change on hover */
+.nav-logo .logo-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-logo .logo-link:hover {
+    color: var(--accent-gold);
+}
+
+.nav-logo .brand-name {
+    color: inherit;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
 .hamburger span {
     width: 25px;
     height: 3px;
