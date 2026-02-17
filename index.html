@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carcella - Premium Car Hire & Sales in Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero" class="logo-link">
+                    <img src="images/logo.jpg" alt="Carcella logo" class="logo-img" style="height:40px; width:auto;">
+                    <span class="brand-name" style="margin-left:8px; font-weight:700;">Carcella</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#rental" class="nav-link">Car Hire</a></li>
+                <li class="nav-item"><a href="#sales" class="nav-link">Cars for Sale</a></li>
+                <li class="nav-item"><a href="#why-us" class="nav-link">Why Carcella</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background" style="background-image: url('images/mercedez.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Drive Your Dream with Carcella</h1>
+            <p class="hero-subtitle">Premium Car Hire & Quality Cars for Sale in Kenya</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="smoothScroll('rental')">Hire a Car</button>
+                <button class="btn btn-secondary" onclick="smoothScroll('sales')">Browse Cars for Sale</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Carcella</h2>
+                <p>Your Trusted Partner in Premium Mobility</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Carcella, we believe in delivering excellence through quality vehicles and exceptional service. With over a decade of experience in Kenya's automotive industry, we've established ourselves as the premier choice for car rentals and vehicle sales.</p>
+                    <p>Our fleet consists of meticulously maintained, modern vehicles that combine luxury with reliability. Whether you're looking for a short-term rental for your business trip or a long-term hire for extended use, Carcella delivers uncompromising quality and professionalism.</p>
+                    <p>We proudly serve all major cities across Kenya including Nairobi, Mombasa, Kisumu, and Nakuru, with rapid delivery and pickup services available.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Premium Fleet Management</li>
+                        <li><i class="fas fa-check"></i> Verified & Certified Vehicles</li>
+                        <li><i class="fas fa-check"></i> 24/7 Customer Support</li>
+                        <li><i class="fas fa-check"></i> Competitive Pricing</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="images/outback.jpg" alt="Carcella Fleet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Hire Section -->
+    <section id="rental" class="rental section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium Car Hire</h2>
+                <p>Choose from our curated selection of luxury vehicles</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterCars('all')">All Cars</button>
+                <button class="filter-btn" onclick="filterCars('SUV')">SUV</button>
+                <button class="filter-btn" onclick="filterCars('Sedan')">Sedan</button>
+                <button class="filter-btn" onclick="filterCars('Luxury')">Luxury</button>
+            </div>
+
+            <div class="cars-grid" id="rental-cars">
+                <!-- Cars will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars for Sale Section -->
+    <section id="sales" class="sales section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cars for Sale</h2>
+                <p>Explore our inventory of quality vehicles</p>
+            </div>
+
+            <div class="cars-grid" id="sales-cars">
+                <!-- Cars will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Carcella</h2>
+                <p>Experience the difference in premium automotive services</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive rates without compromising on quality. We offer transparent pricing with no hidden charges.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verified Vehicles</h3>
+                    <p>All vehicles undergo rigorous inspection and maintenance. Drive with confidence knowing your safety is paramount.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support via phone, WhatsApp, and email. We're always here when you need us.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Flexible Payment</h3>
+                    <p>Multiple payment options including cash, card, and bank transfers. Monthly packages available for long-term rentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real experiences from our valued customers</p>
+            </div>
+
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Carcella provided exceptional service for my business trip to Nairobi. The vehicle was immaculate and the driver was professional. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John" alt="Client">
+                        <div>
+                            <h4>John Kamau</h4>
+                            <p>Business Executive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best car rental experience in Kenya. The Range Rover I rented was pristine, and their customer service team was incredibly helpful throughout my stay."</p>
+                    <div class="testimonial-author">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="Client">
+                        <div>
+                            <h4>Sarah Omondi</h4>
+                            <p>Travel Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I purchased a used Mercedes from Carcella last year. The vehicle is in perfect condition and the after-sales support has been outstanding."</p>
+                    <div class="testimonial-author">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michael" alt="Client">
+                        <div>
+                            <h4>Michael Kipchoge</h4>
+                            <p>Private Car Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-dots">
+                <span class="dot active" onclick="currentTestimonial = 0; showTestimonial()"></span>
+                <span class="dot" onclick="currentTestimonial = 1; showTestimonial()"></span>
+                <span class="dot" onclick="currentTestimonial = 2; showTestimonial()"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you. Contact us today!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya<br>Mombasa, Kisumu, Nakuru</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+254 712 345 678<br>+254 734 567 890</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@carcella.co.ke<br>support@carcella.co.ke</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/254712345678" target="_blank" class="whatsapp-link">
+                                Chat with us on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Carcella</h4>
+                    <p>Premium car hire and sales in Kenya. Drive your dream with us.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#rental">Car Hire</a></li>
+                        <li><a href="#sales">Cars for Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#rental">Short-term Rentals</a></li>
+                        <li><a href="#rental">Long-term Rentals</a></li>
+                        <li><a href="#sales">Used Cars</a></li>
+                        <li><a href="#sales">New Cars</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">WhatsApp</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Carcella. All rights reserved. Premium Car Hire & Sales in Kenya.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Car Details -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
